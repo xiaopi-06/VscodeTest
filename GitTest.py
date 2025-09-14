@@ -12,7 +12,7 @@ def calculate_quartiles(data):
 #定义数据
 Data1 = [1, 2, 3, 3, 4, 4, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 9, 9, 10, 12, 12, 13, 15, 16, 18, 23, 55]
 Data2 = [1, 2, 3, 4, 5, 6, 7, 8]
-# df = pd.DataFrame(Data, columns=["values"])
+df = pd.DataFrame(Data, columns=["values"])
 #计算四分位数
 pdq3 = df["values"].quantile(0.75)
 q1 = np.percentile(Data2, 25)
