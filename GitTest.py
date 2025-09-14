@@ -14,7 +14,7 @@ Data1 = [1, 2, 3, 3, 4, 4, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 9, 9, 10, 12, 
 Data2 = [1, 2, 3, 4, 5, 6, 7, 8]
 # df = pd.DataFrame(Data, columns=["values"])
 #计算四分位数
-# pdq3 = df["values"].quantile(0.75)
+pdq3 = df["values"].quantile(0.75)
 q1 = np.percentile(Data2, 25)
 q2 = np.percentile(Data2, 50)
 q3 = np.percentile(Data2, 75)
@@ -23,4 +23,4 @@ q3 = np.percentile(Data2, 75)
 print("第一分位数：", q1)
 print("中位数：", q2)
 print("第三分位数：", q3)
-# print("pd第三四分位数", pdq3)
+print("pd第三四分位数", pdq3)
